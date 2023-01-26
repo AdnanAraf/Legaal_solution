@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                black: '#E7E7E7',
+                black1:'#111111'
+              },
+              fontFamily: {
+         garmond:["EB Garamond"],
+         poppins:["Poppins"],
+              },
+              screens: {
+                sm: '640px'
+              },
+            },
+          },
+        };
+      </script>
+  <navbar>
+    <div class="header">
+      <img src="./images/logo.png" class="absolute lg:left-[180px] lg:top-[50px] left-[25px] top-[40px] ">
+        <h1 class="absolute lg:left-[265px] lg:top-[50px] font-bold text-4xl font-garmond left-[85px] top-[50px]">Justice</h1>
+    </div>
+    <!----------------------------------Logo Part stop-------->
+    <!----------------------------------------------------------------Navbar PART Start---------------------------->
+    <div class=" navbar">
+        <ul class="lg:flex lg:justify-center lg:items-center absolute lg:left-[529px] lg:top-[60px] left-[129px] top-[100px] lg:text-base text-xl ">
+            <li><a href="#" class="lg:py-3 lg:px-7   px-9 ">Home</a></li>
+            
+            <li><a href="#" class="lg:py-3 lg:px-7 py-5  px-9  ">Service </a> <img src="./images/Frame1.png" class="absolute lg:left-[183px] lg:top-[1px] left-[100px] bottom-[80px]"></li>
+
+            <li><a href="#" class="lg:py-3 lg:px-7 py-5 px-9 ">Cases </a><img src="./images/Frame1.png" class="absolute lg:left-[283px] lg:top-[1px] left-[100px] bottom-[55px]"></li>
+
+
+            <li><a href="#" class="lg:py-3 lg:px-7 py-5 px-9">Blog </a><img src="./images/Frame1.png" class="absolute lg:left-[383px] lg:top-[1px] left-[100px] bottom-[30px]"></li>
+
+
+            <li><a href="#" class="lg:py-3 lg:px-7 py-5 px-9">Contract </a><img src="./images/Frame1.png" class="absolute lg:left-[483px] lg:top-[1px] left-[110px] top-[115px]"></li>
+        </ul>
+    </div>
+    <div class=" button">
+        <button class=" showmodal absolute lg:w-[220px] lg:h-[64px] lg:left-[1145px] lg:top-[40px] lg:rounded-lg bg-yellow-700 text-white font-bold text-[18px]  w-[210px]h-[64px] left-[140px] top-[280px]">Free Consultation</button>
+
+
+        
+
+       
+    <div class="modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+      <div class="bg-white rounded shadow-lg
+      lg:w-1/3 w-96">
+  
+  <div class="border-b px-4 py-2">
+      <h3>Modal Title</h3>
+  </div>
+
+  <div class="p-3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, mollitia.
+  </div>
+  <div class="flex justify-end items-center w-100 border-t p-3">
+    
+      <button class="bg-red-600 hover:red-700 px-3 py-1 rounded texts-white mr-1 close-modal">Cancel</button>
+      <button class="bg-blue-600 hover:red-700 px-3 py-1 rounded texts-white mr-1 ok-modal">OK</button>
+  </div>
+  
+  </div>
+  </div> 
+
+  <script>
+      let modal = document.querySelector('.modal');
+
+      let modal1 = document.querySelector('.showmodal');
+
+      let modal2 = document.querySelector('.close-modal');
+
+      let modal3 = document.querySelector('.ok-modal');
+
+
+      modal1.addEventListener('click',function(){
+          modal.classList.remove('hidden');
+      })
+
+      modal2.addEventListener('click',function(){
+          modal.classList.add('hidden');
+      })
+
+      modal3.addEventListener('click',function(){
+          modal.classList.add('hidden');
+      })
+
+
+  </script> 
+    </div>
+</navbar>
+ <!----------------------------------------------------------------NAVBAR PART Finish---------------------------->
+
+ <!-----------------------------------------------------------------Background Part------------------------------->
+
+ <div class=" background">
+    <div class="banner lg:relative lg:bottom-[0px] relative bottom-[50px]">
+
+        <img src="./images/banner.png" class="  absolute lg:h-[550px] lg:w-[1210px] lg:left-[165px] lg:top-[164px] top-[364px] h-[300px]">
+
+        <h1 class="absolute lg:h-[170px] lg:w-[668px] lg:left-[424px] lg:top-[268px] lg:text-[72px] text-white text-center font-garmond font-bold top-[368px] left-[55px] w-[304px] text-[30px] ">We Provide Effective Legal Solutions</h1>
+
+        <p class="absolute lg:w-[669px] lg:left-[450px] lg:top-[472px] lg:text-[18px] text-poppins text-white text-center leading-[26px] h-[52px] top-[460px] left-[24px] w-[345px] text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+        <div class="search">
+                 
+                    <input type="text" id="simple-search" class=" absolute lg:w-[500px] lg:h-[64px] bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg lg:top-[546px] lg:left-[440px] left-[10px] w-[250px] h-[32px] top-[550px] " placeholder="Search your services" required>
+            </form>
+            
+            </div>
+            <div class="button1">
+                <button class="absolute lg:h-[64px] lg:w-[150px] rounded-[8px] lg:top-[546px] lg:left-[977px] lg: bg-amber-700 lg: text-white text-poppins lg:text-xl font-bold top-[550px] left-[290px] h-[32px] w-[75px]">Search</button>
+        </div>
+    </div>
+    
+ </div>
+
+
+
+
+
+
+
+
+ <!---------------------------------------Section-2 Start----------------------------------------------->
+
+
+
+
+ <section>
+  <div class="header ">
+    <h1 class="absolute lg:top-[834px] lg:left-[607px] lg:text-[40px] lg:font-garmond lg:font-bold top-[700px] left-[60px] font-bold text-[24px]">The Legal Practice Area</h1>
+    <p class="absolute lg:top-[910px] lg:left-[460px] lg:w-[714px] text-center lg:text-[18px] top-[750px] ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+  </div>
+
+  <!----------------------------------------------------GRID PART1--------------------------------------->
+
+ 
+  <div class=" relative jacket md:grid md:grid-cols-3 gap-5 m-12 mr-48 -ml-2 lg:ml-32 lg:top-[1000px] top-[900px] ">
+<!---------------------------------------------------------Businesss Start--------------------------->
+    <div class="business lg:h-[500px] h-[500px] w-96  shadow-2xl ml-24 relative m-4 ">
+        <img src="./images/business.png" class=" absolute m-4   mt-10 lg:ml-40 left-[140px] rounded-lg">
+        <h1 class="absolute top-40 text-xl font-bold ml-32">Business Law </h1>
+        <p class="absolute top-48  ml-12 mt- py-2 m-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img src="./images/Frame.png" class="absolute top-96 ml-40">
+
+    </div>
+<!---------------------------------------------------------Businesss Stop--------------------------->
+
+<!--------------------------------------------------------Criminal Start------------------------->
+
+    <div class="Criminal h-[500px] w-96  shadow-2xl ml-24 relative m-4">
+        <img src="./images/criminal.png" class=" absolute m-4  mt-10 ml-40 left-[140px] rounded-lg">
+        <h1 class="absolute top-40 text-xl font-bold ml-32">Criminal Law </h1>
+        <p class="absolute top-48  ml-12 mt- py-2 m-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" class="absolute top-96 ml-40">
+    </div>
+<!--------------------------------------------------------Criminal Stop------------------------->
+
+<!---------------------------------------------------------Child Start--------------------------->
+
+    <div class="Child h-[500px] w-96  shadow-2xl ml-24 relative m-4">
+        <img src="./images/child.png" class=" absolute m-4 mt-10 ml-40 left-[140px] rounded-lg">
+        <h1 class="absolute top-40 text-xl font-bold ml-32">Child Support </h1>
+        <p class="absolute top-48  ml-12 mt- py-2 m-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" class="absolute top-96 ml-40">
+    </div>
+    
+<!---------------------------------------------------------Child Stop--------------------------->
+
+
+<!--------------------------------------------------Education Law------------------------------------>
+
+<div class="Child h-[500px] w-96  shadow-2xl ml-24 relative m-4">
+<img src="./images/education.png" class=" absolute m-4 mt-10 ml-40 left-[140px] rounded-lg">
+<h1 class="absolute top-40 text-xl font-bold ml-32">Education Law </h1>
+<p class="absolute top-48  ml-12 mt- py-2 m-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+<img src="./images/Frame.png" class="absolute top-96 ml-40">
+</div>
+<!-----------------------------------------------------Divorce Law-------------------------------------->
+<div class="Child h-[500px] w-96  shadow-2xl ml-24 relative m-4">
+<img src="./images/divorce.png" class=" absolute m-4 mt-10 ml-40  left-[130px] rounded-lg">
+<h1 class="absolute top-40 text-xl font-bold ml-36">Divorce Law </h1>
+<p class="absolute top-48  ml-12 mt- py-2 m-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+<img src="./images/Frame.png" class="absolute top-96 ml-40">
+</div>
+<!------------------------------------------------------Tax Law---------------------------------------->
+
+<div class="Child h-[500px] w-96  shadow-2xl ml-24 relative m-4">
+<img src="./images/tax.png" class=" absolute m-4 mt-10 ml-40  left-[120px] rounded-lg">
+<h1 class="absolute top-40 text-xl font-bold ml-36">Tax Law </h1>
+<p class="absolute top-48  ml-12 mt- py-2 m-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+<img src="./images/Frame.png" class="absolute top-96 ml-40">
+</div>
+
+</div>
+</div>
+ </section>
+
+
+ <!---------------------------------------------Slider Part Start && Section-3----------------------------------->
+ <section>
+  <div class="header relative">
+
+    <h1 class=" absolute lg:top-[1100px] lg:left-[621px] font-garmond text-[32px] font-bold top-[1000px] left-[40px]">What Our Client Say</h1>
+    <p class="absolute lg:top-[1200px] lg:left-[471px] lg:w-[659px] text-center top-[1100px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+  </div>
+
+  
+  <div class=" slider ">
+    <div class="row">
+    <div class="col-lg-12 relative top-[1300px]">
+  
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class=" img1 text-center d-flex justify-content-center align-items-center ">
+              <div class="text-center relative">
+                 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img2 text-center d-flex justify-content-center align-items-center">
+              <div class="text-center">
+               
+                
+              </div>
+           
+             
+          
+        
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img3 text-center d-flex justify-content-center align-items-center">
+              <div class="text-center">
+               
+              </div>
+           
+            
+        
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+     
+    </div>
+  </div>
+  </div>
+ </section>
+
+
+     
+ <!---------------------------------------------Frequency && Section-4----------------------------------->
+
+
+ <section>
+  <div class="header relative">
+    <h1 class="font-bold absolute lg:top-[1400px] lg:left-[500px] lg:text-[40px] top-[1300px] left-[30px] text-[20px]">Frequently Asked Any Questions</h1>
+    <p class="absolute lg:top-[1480px] lg:left-[480px] lg:w-[650px] text-center top-[1350px] w-[300px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+  </div>
+
+  
+
+  <div class="container absolute top-[3500px] flex">
+  
+  <div class="img ">
+    
+  </div>
+</div>
+
+
+ <div class=" relative footer lg:flex lg:flex-row-reverse justify-around md:flex md:flex-col-reverse lg:top-[1650px] top-[1600px]">
+      <div class="img ">
+          <img src="./images/faq.png" class=" lg:h-[574px] lg:w-[574px] lg:top[40px] w-[400px] h-[400px] ">
+      </div>
+
+      
+      <div class="box  ">
+      <div class="box mx-auto p-4">
+        <details class=" border-cyan-100  lg:w-96 w-80 bg-white shadow rounded group" >
+          <summary class="list-none flex flex-wrap items-center">
+              <h3 class="flex flex-1 p-4">Difference Between Grid And Flex?</h3>
+    
+              <div class="flex w-10 items-center justify-center">
+    
+                  <div class="border-8 border-transparent border-l-gray-600 ml-2 group-open:rotate-90 transition-transform origin-left"></div>
+    
+              </div>
+    
+    
+          </summary>
+          <div>
+              <p>Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.</p>
+          </div>
+      </details>
+      </div>
+
+
+
+
+      <div class="box1 mx-auto p-4">
+        <details class=" border-cyan-100 lg:w-96 w-80 bg-white shadow rounded group" >
+          <summary class="list-none flex flex-wrap items-center">
+              <h3 class="flex flex-1 p-4">3. What is CSS Box Model</h3>
+    
+              <div class="flex w-10 items-center justify-center">
+    
+                  <div class="border-8 border-transparent border-l-gray-600 ml-2 group-open:rotate-90 transition-transform origin-left"></div>
+    
+              </div>
+    
+    
+          </summary>
+          <div>
+              <p>   In CSS, the term "box model" is used when talking about design and layout.
+    
+                  The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content</p>
+          </div>
+      </details>
+      </div>
+     
+      <div class="box2 mx-auto p-4">
+        <details class=" border-cyan-100  lg:w-96 w-80 bg-white shadow rounded group" >
+          <summary class="list-none flex flex-wrap items-center">
+              <h3 class="flex flex-1 p-4">3. What is CSS Box Model</h3>
+    
+              <div class="flex w-10 items-center justify-center">
+    
+                  <div class="border-8 border-transparent border-l-gray-600 ml-2 group-open:rotate-90 transition-transform origin-left"></div>
+    
+              </div>
+    
+    
+          </summary>
+          <div>
+              <p>   In CSS, the term "box model" is used when talking about design and layout.
+    
+                  The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content</p>
+          </div>
+      </details>
+  </div>
+
+  <div class="box3 mx-auto p-4">
+
+  <details class=" border-cyan-100 lg:w-96 w-80 bg-white shadow rounded group" >
+    <summary class="list-none flex flex-wrap items-center">
+        <h3 class="flex flex-1 p-4">      4. What is Symantic Tag</h3>
+
+        <div class="flex w-10 items-center justify-center">
+
+            <div class="border-8 border-transparent border-l-gray-600 ml-2 group-open:rotate-90 transition-transform origin-left"></div>
+
+        </div>
+
+
+    </summary>
+    <div>
+        <p>  The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages. The pages made with semantic elements are much easier to read. It has greater accessibility. It offers a better user experience.</p>
+    </div>
+</details>
+    
+  </div>
+      </div>
+</section>
+
+
+<!-----------------------------------------------------SECTION-5----------------------------------------->
+<section>
+  <div class="header relative top-[350px]">
+    <h1 class="font-bold absolute lg:top-[1400px] lg:left-[600px] lg:text-[40px] top-[1400px] text-[30px] left-[70px]">Contact With Us</h1>
+    <p class="absolute lg:top-[1480px] lg:left-[400px] lg:w-[650px] text-center top-[1480px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+  </div> 
+  
+
+
+  <div class="  4-box lg:grid lg:grid-cols-2 grid grid-cols-1">
+
+ 
+  <div class="box relative lg:h-[285px] lg:w-[285px]   bg-slate-200 lg:top-[2000px] lg:ml-28 top-[2000px] h-[250px] w-[250px] ml-20">
+    <img src="./images/address.png" class="absolute lg:top-[62px] lg:left-[96px] top-[52px] left-[96px]">
+    <h1 class=" absolute text-center lg:left-[76px] lg:top-[120px] font-bold left-[76px] top-[110px]">Address</h1>
+    <p class="absolute lg:left-[36px] lg:top-[150px] lg:w-[160px] top-[140px] left-[36px] w-[160px]">A108 Adam Street,
+      New York, NY 535022</p>
+  </div>
+
+
+  <div class="box relative lg:h-[285px] lg:w-[285px] bg-slate-200 lg:top-[2000px] lg:-ml-96  top-[2000px] h-[250px] w-[250px] ml-20">
+    <img src="./images/call.png" class="absolute lg:top-[62px] lg:left-[116px] top-[52px] left-[96px]">
+    <h1 class=" absolute text-center lg:left-[106px] lg:top-[120px] font-bold left-[76px] top-[110px]">Call Us</h1>
+    <p class="absolute lg:left-[56px] lg:top-[150px] lg:w-[160px] top-[140px] left-[36px] w-[160px]">+88 01750 00 00 00
+      +88 01750 00 00 00</p>
+  </div>
+
+
+
+
+  <div class="box relative lg:h-[285px] lg:w-[285px] bg-slate-200 lg:top-[2000px] lg:ml-28 top-[2000px] h-[250px] w-[250px] ml-20">
+    <img src="./images/email.png" class="absolute lg:top-[62px] lg:left-[96px] top-[52px] left-[96px]">
+    <h1 class=" absolute text-center lg:left-[86px] lg:top-[120px] font-bold left-[76px] top-[110px]">Email Us</h1>
+    <p class="absolute lg:left-[56px] lg:top-[150px] lg:w-[160px] top-[140px] left-[56px] w-[160px]">info@gmail.com
+      info@gmail.com</p>
+  </div>
+
+  <div class="box relative lg:h-[285px] lg:w-[285px] bg-slate-200 lg:top-[2000px]  lg:-ml-96  top-[2000px] h-[250px] w-[250px] ml-20">
+    <img src="./images/time.png" class="absolute lg:top-[62px] lg:left-[116px] top-[52px] left-[96px]">
+    <h1 class=" absolute text-center lg:left-[86px] lg:top-[120px] font-bold left-[76px] top-[110px]">Working Hours</h1>
+    <p class="absolute lg:left-[56px] lg:top-[150px] lg:w-[160px] top-[140px] left-[36px] w-[160px]">Mon-Fri: 9AM to 5PM
+      Sunday: 9AM to 1 PM</p>
+  </div>
+</div>
+
+<div class="form relative  lg:-left-[40px] lg:-top-[110px] top-[2100px]">
+ 
+                 
+    <input type="text" id="simple-search" class=" absolute lg:w-[500px] lg:h-[64px] bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg lg:top-[1546px] lg:left-[740px]  w-[350px] h-[50px] top:[2006px] left-[10px] " placeholder="Your Name" required>
+
+                     
+    <input type="text" id="simple-search" class=" absolute lg:w-[500px] lg:h-[64px] bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg lg:top-[1640px] lg:left-[740px] left-[10px]   top-[80px] w-[350px] h-[50px]" placeholder="Your Email" required>
+
+                     
+    <input type="text" id="simple-search" class=" absolute lg:w-[500px] lg:h-[64px] bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg lg:top-[1740px] lg:left-[740px] left-[10px] w-[350px] h-[50px] top-[150px] " placeholder="Subject" required>
+
+    <input type="text" id="simple-search" class=" absolute lg:w-[500px] lg:h-[264px] bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg lg:top-[1840px] lg:left-[740px] left-[10px] w-[350px] h-[100px] top-[250px] " placeholder="Message" required>
+
+
+</div>
+</div>
+</section>
+
+
+
+<!--------------------------------------------------------------Section-6-------------------------------->
+
+<div class="footer">
+  <div class="  relative  background lg:w-full lg:h-[506px] bg-black lg:top-[2200px] h-[1006px] min-w-full top-[2600px] ">
+    
+    <div class="con lg:flex lg:justify-around ">
+
+
+    <div class="subject relative lg:-left-[70px] lg:top-[150px] top-[5px] left-[70px]">
+<img src="./images/logo.png">
+<p class="text-white w-[250px] absolute top-[80px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+</div>
+
+
+<div class="subject relative lg:-left-[70px] lg:top-[150px] left-[70px] top-[200px]">
+  <h1 class="lg:text-[30px] text-white text-[30px] ">UseFul Link</h1>
+ <div class="grid lg:grid lg:grid-cols-1 text-white lg:top-[190px] my-8">
+
+
+ <a href="#">Home</a>
+ <a href="#">About</a>
+ <a href="#">Blog</a>
+ <a href="#">Contract</a>
+</div>
+ 
+  </div>
+
+
+
+  <div class="subject relative lg:-left-[70px] lg:top-[150px] left-[70px]  top-[250px]">
+    <h1 class="lg:text-[30px] text-white text-[30px] ">Contract Now</h1>
+    <p class="text-white lg:w-[250px] absolute lg:top-[70px] w-[250px]">555 4th 5t NW, Washington
+      DC 20530, United States +88 01750 000 000
+      +88 01750 000 000</p>
+    </div>
+
+
+    <div class="subject relative lg:-left-[70px] lg:top-[150px] top-[400px] left-[90px]">
+      <h1 class="lg:text-[30px] text-white text-[30px]">Subscribe</h1>
+      <p class="text-white lg:w-[250px] absolute lg:top-[70px] lg:left-[0px] w-[150px]">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+      <input type="text" id="simple-search" class=" absolute lg:w-[300px] lg:h-[64px] bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg lg:top-[160px] lg:left-[0px] -left-[60px] w-[250px] h-[50px] top-[150px] " placeholder="Your Email Address" required>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+</body>
+</html>
